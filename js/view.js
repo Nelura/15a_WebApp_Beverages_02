@@ -60,7 +60,7 @@ function updateImg(imgArr) {
     }
 
     // 2. img-Elemente erzeugen & als Child in Wrapper einhängen
-    for (var i = 0; i < imgArr.length; i++) {
+    for (let i = 0; i < imgArr.length; i++) {
         let tmpElement = document.createElement("img");
         let tmpAttr = document.createAttribute("src");
         tmpAttr.value = gui.img.path + imgArr[i] + gui.img.ext;
@@ -86,6 +86,6 @@ function updateTxt(strArr) {
 
 //Modul: Konsolenausgabe --> Test:
 //ausgabe("test");
-function ausgabe(outputStr) {
-    console.log(outputStr);
+function ausgabe(inputStr) {
+    console.log(inputStr);
 }
